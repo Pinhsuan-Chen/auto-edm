@@ -40,10 +40,10 @@ function insertBeforeIndex(content, index, textToAdd){
 
 }
 
-//show the result htm code
-function showResult(content){
+//copy the result htm code
+
 	document.getElementById('showResult').innerHTML = content;
-}
+
 
 // preview 
 
