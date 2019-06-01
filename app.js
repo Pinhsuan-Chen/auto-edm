@@ -20,6 +20,7 @@ function findWidth(){
 		console.log(allWidthsNum);
 		
 		// find biggest int => table width
+		// cannot find the right biggest number if there are int(string) and % in array
 		var largest = Math.max.apply(Math, allWidthsNum);
 		console.log(largest);
 	}
