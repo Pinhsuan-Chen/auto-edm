@@ -3,19 +3,13 @@ var txt;
 // get input from text area
 function insertEdmCode(){
 	txt = document.getElementById('txt').value;
-
 	console.log(txt);
 }
 
 // auto detect width 
-	// find all width="______ "
-	
-	// find biggest int => table width
-
-	function findWidth(){
+function findWidth(){
+		// find all width="______ "
 		var allWidths = txt.match(/\width="(.*?)\"/g);
-		
-		console.log(allWidths[1]);
 		
 		// save all int into a array 
 		allWidthsNum = [];
@@ -24,11 +18,25 @@ function insertEdmCode(){
 			allWidthsNum.push(it.slice(7, it.length-1));
 		})
 		console.log(allWidthsNum);
-
+		
+		// find biggest int => table width
+		var largest = Math.max.apply(Math, allWidthsNum);
+		console.log(largest);
 	}
 
-// find sth in input (place)
+// find first table in txt (place)
+function findFirstTable(){
+	var firstTable = txt.indexOf("<table");
+	console.log(firstTable);
+	return firstTable;
+}
 
+function insertBeforeIndex(content, index, textToAdd){
+	content = content.slice(0, index) + textToAdd + content.slice(index);
+	console.log(content);
+
+
+}
 
 // insert sth to the input(var width) at (var place)  
 
