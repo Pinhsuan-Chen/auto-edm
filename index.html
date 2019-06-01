@@ -10,12 +10,13 @@
 	<div class="container">
 		<h3>edm code here</h3>
 	<div id="box">
-    <textarea id="txt" placeholder="edm htm code here">123 <table> width="30" hi width="90"   width="60"</textarea>
+    <textarea id="txt" placeholder="edm htm code here">123 <table> width="30"</table> hi width="90"   width="60"</textarea>
     <button onclick="insertEdmCode();findWidth();findFirstTable();">enter</button>
 
-    <button onclick="insertBeforeIndex(txt, findFirstTable(), '321go')">find table</button>
-    <div id="showResult">
-    	<h3>result</h3>
+    <button onclick="showResult(insertBeforeIndex(txt, findFirstTable(), 'goooooooo'))">show</button>
+    <h3>result</h3>
+    <div id="showResult" class="border">asdf
+    	
     </div>
 	</div>
 	

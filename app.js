@@ -30,15 +30,20 @@ function findFirstTable(){
 	console.log(firstTable);
 	return firstTable;
 }
-
+// insert sth to the input(var width) at (var place)  
 function insertBeforeIndex(content, index, textToAdd){
-	content = content.slice(0, index) + textToAdd + content.slice(index);
-	console.log(content);
-
+	var before = content.slice(0, index);
+	var after = content.slice(index); 
+	console.log(after);
+	console.log(before + textToAdd + after);
+	return before + textToAdd + after;
 
 }
 
-// insert sth to the input(var width) at (var place)  
+//show the result htm code
+function showResult(content){
+	document.getElementById('showResult').innerHTML = content;
+}
 
 // preview 
 
