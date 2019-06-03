@@ -1,3 +1,18 @@
 .border{
 	border:1px solid black;
 }
+
+textarea{
+	overflow-y: scroll;
+	width: 100%;
+	height: 300px;
+}
+
+.head{
+	background-image: linear-gradient(top, #c2bfef, #ffffff);
+    background-image: -moz-linear-gradient(top, #c2bfef, #ffffff);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c2bfef), to(#ffffff));
+    margin-top:30px;
+    padding-bottom:100px;
+
+}

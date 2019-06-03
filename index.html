@@ -3,26 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css?1s">
 </head>
 <body>
 	<div class="container">
-		<h3>edm code here</h3>
-	<div id="box">
-    <textarea id="txt" placeholder="edm htm code here">123 <table> width="30"</table> hi width="90"   width="60"</textarea>
-    <button onclick="insertEdmCode();findWidth();findFirstTable();">enter</button>
+        <div class="head">
+            <h1>auto add header and footer</h1>
+        </div>
+<div >
+         <h3>edm code here</h3> <button onclick="insertEdmCode();findWidth();findFirstTable();">enter</button>
+        <textarea id="txt" placeholder="edm htm code here" width="100%" height="300px" >123 <table> width="30"</table> hi width="90"   width="60"</textarea>
+</div>
+   
 
-    <button onclick="showResult(insertBeforeIndex(txt, findFirstTable(), 'goooooooo'))">show</button>
-    <h3>result</h3>
-    <div id="showResult" class="border">asdf
-    	
+
+        <!-- <button onclick="showResult()">show</button> -->
+        <!-- <h3>result</h3> -->
+        <!-- <div id="showResult" class="border">asdf </div>-->
+<hr>
+
+        <h3>Add header and footer</h3>
+        <div >
+            <button onclick="createPreview(insertBeforeIndex(txt, findFirstTable(), '<h1>gooooooood boy</h1>'));">preview</button>
+        </div>
+
+        <iframe id="preview" width="800px" height="2000px"></iframe>
+
+
     </div>
-	</div>
-	
-</div>  
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="app.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
